@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const app = express();
-app.use(cors({origin:"https://gemconsulters.netlify.app/contact"}));
+app.use(cors());
 app.use(express.json()); // Middleware to parse JSON request body
 
 // Route for navbar data
